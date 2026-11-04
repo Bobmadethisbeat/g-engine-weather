@@ -1,19 +1,22 @@
-G-ENGINE WEATHER v1.2
-==================
-Free personal-use weather Progressive Web App.
+G-ENGINE WEATHER v1.4 — Premium Atmosphere Edition
 
-HOSTING ON GITHUB PAGES
-1. Create a free GitHub account if needed.
-2. Create a public repository, e.g. gengine-weather.
-3. Upload the files in this folder to the repository root (not the enclosing folder).
-4. Under Settings > Pages, select Deploy from a branch, main, /(root), and Save.
-5. Open the resulting https://USERNAME.github.io/gengine-weather/ address on your Galaxy.
-6. In Chrome use menu > Add to Home screen > Install (if offered).
+UPDATE YOUR EXISTING GITHUB PAGES SITE
+1. Extract this ZIP on your phone or computer.
+2. Open github.com/Bobmadethisbeat/g-engine-weather in Chrome.
+3. Upload/replace the ROOT files index.html and sw.js with these v1.4 files.
+4. Keep manifest.webmanifest, icon.svg, icon-192.png, icon-512.png in the repository root.
+5. Commit the changes. Wait for Actions > pages build and deployment to complete.
+6. Open https://bobmadethisbeat.github.io/g-engine-weather/ and reload. If the old UI remains, close/reopen the installed app or clear its site cache.
 
-Weather data is provided by Open-Meteo for non-commercial use. ZIP search uses Zippopotam.us.
-Requires internet for weather updates. The app shell can remain cached offline, but weather updates cannot.
-The first launch defaults to Baton Rouge, Louisiana. Search for a city or use My location to change it.
-No location is sent to the app developer's server. The browser contacts weather/geocoding providers directly.
-V1.2: Location-local morning/afternoon/evening/night themes, animated sun/moon, and small holiday surprises within 3 days of selected holidays. Previous v1.1 features retained.
-V1.1: Vibrant weather-responsive skies, animated atmospheric effects, 15-minute rain forecast countdown where supported, and 10-minute automatic weather refresh. Rain arrival is approximate, not exact minute-by-minute nowcasting.
-No automatic severe weather push notifications, radar, or native Android widgets in v1.
+WHAT CHANGED
+- High-contrast translucent cards and improved forecast text legibility
+- Smooth sky color interpolation based on local sunrise, solar noon, and sunset
+- Refined CSS sun/moon glow, drifting clouds, rain and storm flashes
+- Rain probability chart and honest 15-minute estimate when available
+- No empty 15-minute tiles when only hourly data is available
+- Location permission message clears after successful geolocation
+- Seasonal Easter eggs retained, reduced-motion and battery-friendly background updates
+- Service-worker cache version bumped to v1.4
+
+Weather data: Open-Meteo free non-commercial service. Rain onset is an approximate model estimate, NOT live radar. Internet needed for forecasts. Public GitHub Pages URL; location is stored locally on your device, not in a developer-controlled backend.
+\nVersion 1.5: 360 condition-aware unfiltered weather phrases, clean-language toggle, tap-to-refresh commentary.\n
